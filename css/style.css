@@ -14,3 +14,31 @@
     height: 100vh;
 }
 
+.container-flex{
+    display: flex;
+    justify-content: space-between;
+}
+/* regole colonna home */
+
+.colonna-home{
+    width: 180px;
+    background-color: black;
+    height: calc(100vh - 70px);
+}
+
+
+/* regole contenuti musicali */
+.contenuti-musicali{
+    width: calc(100vw - 180px);
+    background-color: #141922;
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+}
+
+
+/* regole comandi riproduzione */
+.comandi-riproduzione{
+    height: 70px;
+    width: 100vw;
+    background-color: #282828;
+}
