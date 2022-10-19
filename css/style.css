@@ -24,7 +24,8 @@
     width: 180px;
     background-color: black;
     height: calc(100vh - 70px);
-    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .logo{
@@ -39,6 +40,7 @@
 
 .navigazione{
     margin: 10px;
+    flex-grow: 1;
 
     /* debug */
     height: 300px;
@@ -47,9 +49,6 @@
 
 .account{
     margin: 10px;
-    position: absolute;
-    bottom: 10px;
-    width: 90%;
 
     /* debug */
     height: 80px;
@@ -66,12 +65,14 @@
 }
 
 #upgrade{
-    width: 100%;
+    width: calc(100% - 180px);
     height: 65px;
     background-color: rgba(0, 0, 0, .5);
     display: flex;
     justify-content: right;
     align-items: center;
+    position: fixed;
+    right: 0;
 }
 
 #button-upgrade{
@@ -86,6 +87,7 @@
     width: 40%;
     margin: 0 auto;
     height: 50px;
+    margin-top: 80px;
 
     /* debug */
     background-color: red;
@@ -102,8 +104,7 @@
 }
 
 .square{
-    width: calc(100vw / 6 - 10px);
-    height: calc(100vw / 6 - 10px);
+    width: calc(100% / 6 - 10px);
     margin-right: 10px;
 
     /* debug */
@@ -130,9 +131,7 @@
         flex-wrap: wrap;
     }
     .square{
-        /* width: calc(100vw / 4); */
-        height: calc(100vw / 4);
-        margin: 0 auto;
+        width: calc(100% / 4 - 10px);
     }
 }
 
@@ -151,7 +150,5 @@
     }
 
     .square{
-        width: calc(100vw / 2 - 10px);
-        height: calc(100vw / 2);
-        margin: 0 auto;
+        width: calc(100% / 2 - 10px);
 }
