@@ -73,3 +73,17 @@
     width: 100vw;
     background-color: #282828;
 }
+
+
+
+
+/* responsive xs */
+@media all and (max-width: 420px) {
+    .colonna-home{
+        width: 40px;
+    }
+
+    .contenuti-musicali{
+        width: calc(100vw - 40px);
+    }
+}
