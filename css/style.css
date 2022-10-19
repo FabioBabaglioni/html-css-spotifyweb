@@ -71,12 +71,15 @@
     background-color: rgba(0, 0, 0, .5);
     position: fixed;
     text-align: center;
+    display: flex;
+    justify-content: right;
 }
 
 #button-upgrade{
     height: 32px;
     width: 100px;
     text-align: right;
+
 
     /* debug */
     background-color: red;
