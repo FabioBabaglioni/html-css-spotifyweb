@@ -24,6 +24,37 @@
     width: 180px;
     background-color: black;
     height: calc(100vh - 70px);
+    position: relative;
+}
+
+.logo{
+    margin: 10px;
+
+    /* debug */
+    height: 80px;
+    background-color: blue;
+
+
+}
+
+.navigazione{
+    margin: 10px;
+
+    /* debug */
+    height: 300px;
+    background-color: beige;
+}
+
+.account{
+    vertical-align: text-bottom;
+    margin: 10px;
+    position: absolute;
+    bottom: 10px;
+    width: 90%;
+
+    /* debug */
+    height: 80px;
+    background-color: blanchedalmond;
 }
 
 
