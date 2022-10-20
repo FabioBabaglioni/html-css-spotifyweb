@@ -31,6 +31,18 @@ li{
 .mt-1{
     margin-top: 10px;
 }
+
+.mb-2{
+    margin-bottom: 20px;
+}
+
+.col-grey{
+    color: rgb(165, 165, 165);
+}
+
+.center{
+    text-align: center;
+}
 /* regole colonna home */
 
 .colonna-home{
@@ -45,6 +57,10 @@ li{
     margin: 15px;
 }
 
+.logo-small{
+    display: none;
+}
+
 #img-logo{
     width: 110px;
 }
@@ -57,6 +73,10 @@ li{
 
 .font-home{
     font-size: .6rem;
+}
+
+#img-library{
+    width: 22px;
 }
 
 li a{
@@ -75,7 +95,7 @@ li a{
     color: white;
 }
 
-li:hover{
+li a:hover{
     color: white;
 }
 
@@ -86,15 +106,25 @@ li:hover{
 #playlist{
     color: white;
     font-size: 0.7rem;
-    margin-top: 15px;
+    margin-top: 30px;
+}
+
+.fa-square-plus{
+    font-size: 1.3rem;
 }
 
 .account{
-    margin: 10px;
+    margin: 15px;
+    color: rgb(165, 165, 165);
+}
 
-    /* debug */
-    height: 80px;
-    background-color: blanchedalmond;
+#install{
+    font-size: .7rem;
+    margin-bottom: 10px;
+}
+
+#section-account{
+    margin-top: 10px;
 }
 
 
@@ -118,32 +148,41 @@ li:hover{
 }
 
 #button-upgrade{
-    height: 32px;
-    width: 100px;
+    margin-right: 15px;
+    padding: 10px 35px;
+    border: solid 1px grey;
+    border-radius: 40px;
+    font-size: .6rem;
+    color: rgb(165, 165, 165);
 
-    /* debug */
-    background-color: red;
 }
 
 #nav-in-evidenza{
-    width: 40%;
     margin: 0 auto;
     height: 50px;
     margin-top: 80px;
-
-    /* debug */
-    background-color: red;
 }
+
+#nav-evidenza-flex{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+    font-size: .7rem;
+}
+
+#nav-evidenza-flex:hover{
+    color: white;
+}
+
+
 
 /* sezione Recent played */
 
 .section-title{
-
-    /* debug */
-    background-color: red;
-    margin: 30px 0;
-    width: 150px;
-    height: 60px;
+color: white;
+margin: 30px 15px;
+font-size: 1.2rem;
 }
 
 .mb-3{
@@ -160,25 +199,40 @@ li:hover{
     display: flex;
     justify-content: flex-start;
     margin-top: 30px;
+    margin-bottom: 80px;
 }
 
 .square{
     width: calc(100% / 6 - 10px);
     margin-right: 10px;
+}
 
-    /* debug */
-    background-color: red;
+.font-name-album{
+    color: white;
+    text-align: center;
+    font-size: .7rem;
+    margin: 10px 0;
+}
+
+.font-artist{
+    color: rgb(165, 165, 165);
+    font-size: .5rem;
+}
+
+.ml-15{
+    margin-left: 15px;
 }
 
 .round{
     width: calc(100% / 6 - 10px);
     margin-right: 10px;
+}
+
+.img-round{
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
-
-
-    /* debug */
-    background-color: red;
 }
 
 .img-album{
@@ -195,12 +249,31 @@ li:hover{
     justify-content: space-between;
 }
 
+#img-small{
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+}
+
 .brano-ascolto{
     width: 20%;
     height: 100%;
+    display: flex;
+    align-items: center;
+}
 
-    /* debug */
-    background-color: green;
+.container-title-name-music{
+    margin-left: 10px;
+}
+
+#name-riproduzione{
+    color: white;
+    font-size: .5rem;
+}
+
+#title-riproduzione{
+    font-size: .4rem;
+    color: rgb(165, 165, 165);
 }
 
 .play{
@@ -241,6 +314,31 @@ li:hover{
     .colonna-home{
         width: 40px;
     }
+
+    .logo-small{
+        display: inline;
+        width: 20px;
+        margin: 0;
+    }
+    
+    .font-home, #playlist{
+        display: none;
+    }
+
+    .navigazione, .logo{
+        margin: 10px auto 0px;
+    }
+
+    .account{
+        margin: 10px auto;
+    }
+    
+    #img-logo, .install-app, hr{
+        display: none;
+    
+    }
+
+
 
     .contenuti-musicali{
         width: calc(100vw - 40px)
