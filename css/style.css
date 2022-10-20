@@ -276,13 +276,53 @@ font-size: 1.2rem;
     color: rgb(165, 165, 165);
 }
 
+.icon{
+    color: rgb(165, 165, 165);
+    margin-left: 10px;
+    font-size: .9rem;
+}
+
+.icon-player{
+    color: white;
+    font-size: .9rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.mr-15{
+    margin-right: 15px;
+}
+
 .play{
     width: 60%;
     height: 100%;
-
-    /* debug */
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.container-bar{
+    width: 100%;
+}
+
+.barra{
+    height: 2px;
+    width: 60%;
+    background-color: rgb(165, 165, 165);
+    margin: 15px auto;
+    position: relative;
+}
+
+.border{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    width: 20%;
+    height: 2px;
+}
+
+
 
 .volume{
     width: 20%;
