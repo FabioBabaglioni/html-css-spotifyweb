@@ -18,6 +18,19 @@
     display: flex;
     justify-content: space-between;
 }
+
+a{
+    text-decoration: none;
+
+}
+
+li{
+    list-style-type: none;
+}
+
+.mt-1{
+    margin-top: 10px;
+}
 /* regole colonna home */
 
 .colonna-home{
@@ -29,22 +42,51 @@
 }
 
 .logo{
-    margin: 10px;
+    margin: 15px;
+}
 
-    /* debug */
-    height: 80px;
-    background-color: blue;
-
-
+#img-logo{
+    width: 110px;
 }
 
 .navigazione{
-    margin: 10px;
+    margin: 10px 0 20px 20px;
     flex-grow: 1;
+    color: rgb(165, 165, 165);
+}
 
-    /* debug */
-    height: 300px;
-    background-color: beige;
+.font-home{
+    font-size: .6rem;
+}
+
+li a{
+    color: rgb(165, 165, 165);
+}
+
+#font-playlist-big{
+    font-size: 0.9rem;
+}
+
+.font-playlist{
+    font-size: 0.7rem;
+}
+
+.font-playlist:hover{
+    color: white;
+}
+
+li:hover{
+    color: white;
+}
+
+.font-home:hover{
+    color: white;
+}
+
+#playlist{
+    color: white;
+    font-size: 0.7rem;
+    margin-top: 15px;
 }
 
 .account{
@@ -93,9 +135,26 @@
     background-color: red;
 }
 
-/* sezione libreria musica */
+/* sezione Recent played */
 
-.container-music{
+.section-title{
+
+    /* debug */
+    background-color: red;
+    margin: 30px 0;
+    width: 150px;
+    height: 60px;
+}
+
+.mb-3{
+    margin-bottom: 30px;
+}
+
+.mb-1{
+    margin-bottom: 10px;
+}
+
+.container-playlist{
     width: calc(100% - 20px);
     margin: 0 auto;
     display: flex;
@@ -111,6 +170,17 @@
     background-color: red;
 }
 
+.round{
+    width: calc(100% / 6 - 10px);
+    margin-right: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+
+
+    /* debug */
+    background-color: red;
+}
+
 .img-album{
     width: 100%;
 }
@@ -121,13 +191,44 @@
     height: 70px;
     width: 100vw;
     background-color: #282828;
+    display: flex;
+    justify-content: space-between;
 }
+
+.brano-ascolto{
+    width: 20%;
+    height: 100%;
+
+    /* debug */
+    background-color: green;
+}
+
+.play{
+    width: 60%;
+    height: 100%;
+
+    /* debug */
+    background-color: red;
+}
+
+.volume{
+    width: 20%;
+    height: 100%;
+
+    /* debug */
+    background-color: green;
+}
+
+
+
+
+
 
 
 /* responsive tablet */
 @media all and (max-width: 670px){
 
-    .container-music{
+    .container-playlist{
         flex-wrap: wrap;
     }
     .square{
@@ -151,4 +252,11 @@
 
     .square{
         width: calc(100% / 2 - 10px);
+
+    }
+
+    #upgrade{
+        width: calc(100% - 40px);
+    }
+
 }
