@@ -125,6 +125,9 @@ li a{
 .account{
     margin: 15px;
     color: rgb(165, 165, 165);
+    position: fixed;
+    bottom: 70px;
+    background-color: black;
 }
 
 #install{
@@ -206,6 +209,10 @@ font-size: 1.2rem;
 .square{
     width: calc(100% / 6 - 10px);
     margin-right: 10px;
+}
+
+.container-play{
+    width: 100%;
     position: relative;
 }
 
@@ -231,8 +238,8 @@ font-size: 1.2rem;
 }
 
 .img-round{
-    width: 200px;
-    height: 200px;
+    width: 60%;
+    height: 60%;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -246,12 +253,21 @@ font-size: 1.2rem;
     filter: brightness(20%);
 }
 
+.square:hover .play-hover.fa-regular.fa-circle-play{
+    display: inline;
+}
+
 .play-hover{
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: 1.3rem;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
     color: white;
+}
+
+.play-hover.fa-regular.fa-circle-play{
+    display: none;
 }
 
 
@@ -262,6 +278,7 @@ font-size: 1.2rem;
     background-color: #282828;
     display: flex;
     justify-content: space-between;
+    z-index: 2;
 }
 
 #img-small{
@@ -297,6 +314,10 @@ font-size: 1.2rem;
     font-size: .7rem;
 }
 
+.icon a {
+    color: rgb(165, 165, 165);
+}
+
 .icon-player{
     color: white;
     font-size: .9rem;
@@ -314,6 +335,10 @@ font-size: 1.2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.icon-player a{
+    color: white;
 }
 
 .container-bar-flex{
