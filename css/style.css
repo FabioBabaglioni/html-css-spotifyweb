@@ -74,6 +74,11 @@ li:hover{
     flex-direction: column;
 }
 
+.border-green-left{
+    border-left: solid 3px green ;
+    padding-left: 10px;
+}
+
 .logo{
     margin: 15px;
 }
@@ -146,6 +151,10 @@ li a{
     background-color: #141922;
     height: calc(100vh - 70px);
     overflow-y: auto;
+}
+
+.border-green-bottom{
+    border-bottom: solid 2px green;
 }
 
 #upgrade{
@@ -238,8 +247,7 @@ font-size: 1.2rem;
 }
 
 .img-round{
-    width: 60%;
-    height: 60%;
+    width: 80%;
     border-radius: 50%;
     object-fit: cover;
 }
